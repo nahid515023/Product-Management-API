@@ -37,6 +37,13 @@ A robust RESTful API built with Node.js, Express.js, TypeScript, and MongoDB for
 
 The application consists of two main entities: **Category** and **Product**, with a one-to-many relationship.
 
+### Database Schema Diagram
+
+![Database Schema](https://github.com/user-attachments/assets/8917aebc-7796-4985-8cfd-f7a095ff9ea8)
+
+*Visual representation of the Category and Product entities with their relationships and field definitions.*
+
+### Text-based Schema
 ```
 ┌─────────────────────────────────────┐        ┌─────────────────────────────────────┐
 │              Category               │        │              Product                │
