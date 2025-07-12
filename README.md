@@ -48,11 +48,11 @@ The application consists of two main entities: **Category** and **Product**, wit
 ┌─────────────────────────────────────┐        ┌─────────────────────────────────────┐
 │              Category               │        │              Product                │
 ├─────────────────────────────────────┤        ├─────────────────────────────────────┤
-│ _id: ObjectId (Primary Key)        │◄──────┤ _id: ObjectId (Primary Key)        │
-│ name: String (Required, Unique)    │   1:N  │ name: String (Required)             │
-│ description: String (Optional)     │        │ description: String (Required)      │
-│ createdAt: Date (Auto-generated)   │        │ price: Number (Required, Min: 0)    │
-│ updatedAt: Date (Auto-generated)   │        │ discount: Number (0-100, Default: 0)│
+│ _id: ObjectId (Primary Key)         │ ◄──────┤ _id: ObjectId (Primary Key)         │
+│ name: String (Required, Unique)     │   1:N  │ name: String (Required)             │
+│ description: String (Optional)      │        │ description: String (Required)      │
+│ createdAt: Date (Auto-generated)    │        │ price: Number (Required, Min: 0)    │
+│ updatedAt: Date (Auto-generated)    │        │ discount: Number (0-100, Default: 0)│
 └─────────────────────────────────────┘        │ image: String (Required, URL)       │
                                                │ status: Enum ['In Stock', 'Out']    │
                                                │ productCode: String (Unique)        │
